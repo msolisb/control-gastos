@@ -111,9 +111,41 @@ h1 {
   font-weight: 700;
 }
 
+.filtro {
+  margin-top: 10rem;
+  padding: 2rem 1rem;
+  background-color: var(--blanco);
+  border-radius: 1rem;
+}
+
+.filtro form {
+  text-align: center;
+}
+
+.filtro label {
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-align: center;
+  color: var(--gris-oscuro);
+  margin-right: 1rem;
+}
+
+.filtro select {
+  width: 60%;
+  background-color: var(--gris-claro);
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  color: #94a3b8;
+  outline: none;
+  text-align: center;
+  margin: 1rem auto;
+}
+
 .control-presupuesto {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   max-width: 60rem;
   margin-right: auto;
   margin-left: auto;
@@ -231,6 +263,10 @@ h1 {
   color: var(--gris-oscuro);
 }
 
+.listado-gastos h2 {
+  text-align: center;
+}
+
 .componente-gasto {
   display: flex;
   align-items: center;
@@ -281,4 +317,49 @@ h1 {
   font-weight: 900;
   font-size: 3rem;
   color: var(--negro);
+}
+
+/*** SWIPE LIST OVERRIDES **/
+.swipe-action__leading {
+  background-color: var(--azul);
+  color: var(--blanco);
+  margin-bottom: 2rem;
+}
+
+.swipe-action__trailing {
+  background-color: #db2777;
+  margin-bottom: 2rem;
+  color: var(--blanco);
+}
+
+.swipeable-list .swipe-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.4rem;
+  text-align: right;
+}
+
+.contenido-presupuesto p.negativo,
+.contenido-presupuesto p.negativo span {
+  color: red;
+}
+
+.reset-app {
+  background-color: #db2777;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  color: var(--blanco);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.reset-app:hover {
+  border-color: #a51d5a;
+}
+
+.reset-app:active {
+  transform: scale(0.98);
 }
